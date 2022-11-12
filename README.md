@@ -85,4 +85,24 @@ const add = require('@mono-repo-test/utils')
 
 5. 개별 패키지 디렉토리에서 npm i을 통해서 모듈을 설치하는 경우 최상위 폴더 node_modules만 생성됨. (개별 디렉토리에는 안생김.)
 
+6. package.json 내 main은 어떤 역할을 하는가?
+
+```json
+{
+  "name": "@mono-repo-test/utils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "add.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+```
+해당 모듈을 import 하는 경우 바라보는 파일임. 
+
+- adds.js로 바꾸는 경우?<br/>
+
+  에러 발생. Cannot find module '/node_modules/@mono-repo-test/utils/adds.js'. Please verify that the package.json has a valid "main" entry
+  정확한 엔트리 경로를 입력해달라고 함.
 
