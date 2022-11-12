@@ -1,0 +1,9 @@
+{
+  "name": "@mono-repo-test/utils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "add.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
